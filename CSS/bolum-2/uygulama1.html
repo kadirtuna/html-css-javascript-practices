@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header{
+            background-color: #FC997C;
+            color: #fff;
+            padding: 5px 10px;
+        }
+
+        header a{
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .main-nav {
+            display: inline-block;
+            width: calc(100% - 74px);
+            text-align: right;
+        }
+        
+        .main-nav__item{
+            display: inline-block;
+        }
+
+        .main-nav__item::before{
+            content: "\2022";
+        }
+
+        .main-nav__item:hover, .main-nav__item a:hover {
+            color: #2E4C6D;
+        }
+
+        .main-nav__item a:active, .main-nav__item:active::before {
+            color: #fff;
+        }
+
+        .main-content{
+            background-color: #2E4C6D;
+            height: 300px;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+
+        .main-footer {
+            padding: 10px; 
+            background-color: #FC997C;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <a href="#" class="main-header__logo">MovieApp</a>
+        <nav class="main-nav">
+            <ul" class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Movies</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+       <p>Welcome to Movie App</p>
+    </main>
+    <footer class="main-footer">
+</body>
+</html>

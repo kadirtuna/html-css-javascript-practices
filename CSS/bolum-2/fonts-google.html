@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body{
+            font-family: "Lato", sans-serif;
+        }
+
+        header{
+            background-color: #FC997C;
+            color: #fff;
+            padding: 8px 10px;
+        }
+
+        header a{
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .main-header__logo {
+            font-weight: bold;
+        }
+
+        .main-nav {
+            display: inline-block;
+            width: calc(100% - 78px);
+            text-align: right;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .main-nav__item{
+            display: inline-block;
+        }
+
+        .main-nav__item::before{
+            content: "\2022";
+        }
+
+        .main-nav__item:hover, .main-nav__item a:hover {
+            color: #2E4C6D;
+        }
+
+        .main-nav__item a:active, .main-nav__item:active::before {
+            color: #fff;
+        }
+
+        #showcase{
+            background: url('bg-image.jpg');
+            background-position: center;
+            height: 600px;
+            padding: 20px 10px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        #showcase p{
+            padding: 10px 0;
+        }
+
+        #how-it-works {
+            padding: 20px 0 10px; 
+            text-align: center;
+        }
+
+        #how-it-works h2 {
+            color: #3E4555;
+            font-size: 30px;
+            
+        }
+
+        .main-nav__item--login a{
+            color: #fff;
+            background-color: #2E4C6D;
+            padding: 4px 16px;
+            border-radius: 8px;
+            border: 2px solid #fff;
+        }
+
+        .main-nav__item--login a:hover{
+            color: #2E4C6D;
+            border: 2px solid #2E4C6D;
+            background-color: #fff;;
+        }
+
+        .main-nav__item--login::before{
+            content: none;
+        }
+
+        .row {
+            margin-bottom: 20px;
+        }
+
+        .col {
+            display: inline-block;
+            width: 30%;
+            padding: 10px 0;
+            margin: 8px;
+        }
+
+        .icon-box h3{
+            color: #3E4555;
+            font-size: 26px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <a href="#" class="main-header__logo">MovieApp</a>
+        <nav class="main-nav">
+            <ul" class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#">Filmler</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Diziler</a>
+                </li>
+                <li class="main-nav__item main-nav__item--login">
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="showcase">
+            <p>Welcome to Movie App</p>
+        </section>
+       <section id="how-it-works">
+            <div class="row">
+                <h2>How it works?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, vitae!</p>
+            </div>
+            <div class="row">
+                <div class="icon-box col">
+                    <h3>Register</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, ullam?</p>
+                </div>
+                <div class="icon-box col">
+                    <h3>Choose a Plan</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, ullam?</p>
+                </div>
+                <div class="icon-box col">
+                    <h3>Enjoy Movify</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, ullam?</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>

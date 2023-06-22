@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header{
+            background-color: #FC997C;
+            color: #fff;
+            padding: 8px 10px;
+        }
+
+        header a{
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .main-nav {
+            display: inline-block;
+            width: calc(100% - 74px);
+            text-align: right;
+        }
+        
+        .main-nav__item{
+            display: inline-block;
+        }
+
+        .main-nav__item::before{
+            content: "\2022";
+        }
+
+        .main-nav__item:hover, .main-nav__item a:hover {
+            color: #2E4C6D;
+        }
+
+        .main-nav__item a:active, .main-nav__item:active::before {
+            color: #fff;
+        }
+
+        #showcase{
+            background: url('bg-image.jpg');
+            background-position: center;
+            height: 600px;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+        
+        #how-it-works {
+            padding: 10px; 
+            background-color: #FC997C;
+            font-weight: bold;
+        }
+
+        .main-nav__item--login a{
+            color: #fff;
+            background-color: #2E4C6D;
+            padding: 4px 16px;
+            border-radius: 8px;
+            border: 2px solid #fff;
+        }
+
+        .main-nav__item--login a:hover{
+            color: #2E4C6D;
+            border: 2px solid #2E4C6D;
+            background-color: #fff;;
+        }
+        .main-nav__item--login::before{
+            content: none;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <a href="#" class="main-header__logo">MovieApp</a>
+        <nav class="main-nav">
+            <ul" class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#">Filmler</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Diziler</a>
+                </li>
+                <li class="main-nav__item main-nav__item--login">
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="showcase">
+       <p>Welcome to Movie App</p>
+    </main>
+    <footer id="how-it-works">
+        <p>How it works?</p>
+    </footer>
+</body>
+</html>

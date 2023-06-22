@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=z, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line {
+            font-weight: bold;
+            color: red;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+        }
+
+        p.about::first-line {
+            color: green;
+        }
+
+        P::first-letter {
+            font-size: 48px;
+        }
+
+        p::selection {
+            background-color: hotpink;
+        }
+
+        P::after{   
+            content: '\261D';
+            font-size: 35px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Pseudo Classes -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aliquid alias consequuntur. Assumenda et, ipsum ipsam nobis alias culpa quidem unde possimus, hic harum eveniet deserunt perferendis autem placeat vitae.
+    </p>
+    <p class="about">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni error laborum soluta quaerat facilis, laboriosam maiores voluptatum incidunt nulla totam voluptates obcaecati temporibus quibusdam officia adipisci tenetur itaque ea debitis.
+    </p>
+</body>
+</html>

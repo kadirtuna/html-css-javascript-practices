@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uygulama Floating</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        header, footer{
+            background-color: #8267BE;
+            color: #FFBD35;
+            height: 100px;
+            padding: 15px;
+            vertical-align: middle;
+        }
+
+        .col {
+            float: left;
+            padding: 15px 15px 15px 0;
+        }
+
+        .menu {
+            display: inline-block;
+            width: 33%;
+            vertical-align: top;
+            color: #fff;
+        }
+
+        .menu ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: #502064;
+        }
+
+        .menu li:hover {
+            cursor:pointer;
+            background-color: #8267BE;
+
+        }
+        
+        .content {
+            display: inline-block;
+            padding: 20px;
+            width: 67%;
+        }
+
+        .content h1{
+            margin: 0;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span><h1>Header</h1></span>
+    </header>
+    <main class="clearfix">
+        <div class="menu col">
+            <ul>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            </div>
+        </div><div class="content col">
+            <h1>Komple WEB Geliştirme Kursu</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, delectus, quam tempore ut excepturi fugiat aperiam cupiditate ipsam vitae voluptas consequuntur, perferendis deleniti repudiandae soluta odio! Ullam ratione quia animi.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, delectus, quam tempore ut excepturi fugiat aperiam cupiditate ipsam vitae voluptas consequuntur, perferendis deleniti repudiandae soluta odio! Ullam ratione quia animi.</p>
+        </div>
+    </main>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>
