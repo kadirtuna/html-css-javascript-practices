@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #first-image {
+            background-image: url(background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            height: 100vh;
+        }
+
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: black;
+            color: #fff;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+        }
+
+        .content {
+            text-align: center;
+            padding: 40px;
+            color: rgb(96, 96, 96);
+        }
+
+        #second-image {
+            background-image: url(background-2.jpg); 
+            /* background-position: 0 -120px; */
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+            height: 50vh;  
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="first-image">
+            <div id="main-text">
+                <h1 class="middle">Lorem, ipsum.</h1>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate at officia iste non sapiente eos iusto explicabo enim accusantium, veritatis a dolor nihil ratione vero similique consequuntur. Vel, minus quas!</p>
+        </div>
+        <div id="second-image">
+            <h1 class="middle">Lorem, ipsum.</h1>
+        </div>
+        <div class="content">
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate at officia iste non sapiente eos iusto explicabo enim accusantium, veritatis a dolor nihil ratione vero similique consequuntur. Vel, minus quas!</p>
+        </div>
+    </main>
+</body>
+</html>

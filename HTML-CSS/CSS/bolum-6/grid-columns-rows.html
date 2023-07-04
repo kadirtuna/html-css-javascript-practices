@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            /* height: 800px; */
+            /* grid-template-columns: 150px 250px 400px 150px; */
+            /* grid-template-columns: 150px auto 200px auto; */
+            /* grid-template-columns: auto auto 20%; */
+            /* grid-template-columns: auto auto auto; */
+            /* grid-template-columns: repeat(4, 200px); */
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 2fr;
+
+            grid-auto-rows: 3fr;
+            background-color: #034f84;
+            margin: 20px;
+        }
+
+        .item {
+            background-color: #f7786b;
+            padding: 20px;
+            margin: 20px;
+            color: #fff;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>  
+        <div class="item">Item 4</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 4</div>
+    </div>
+</body>
+</html>

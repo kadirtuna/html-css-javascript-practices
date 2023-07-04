@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        header {
+            position: fixed;
+            width: 100%;
+            display: flex;
+            background-color: rgba(52, 58, 64, 0.7);
+            color: #fff;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .navbar__logo span {
+            color: var(--warning);
+        }
+
+        .navbar {
+            margin-left: auto;
+        }
+
+        .navbar ul{
+            display: flex;
+        }
+
+        .navbar a{
+            color: #fff;
+            padding: 10px;
+            margin: 0 5px;
+        }
+
+        .navbar a:hover {
+            border-bottom: 1px solid var(--warning);
+        }
+
+        .background-image {
+            height: 100vh;
+            background-image: url(img/lobby.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar__logo">
+            <h1><span>Deluxe</span> Hotel</h1>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="background-image"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos enim ab modi? Vitae, quia quis? Repellendus at numquam itaque soluta quibusdam sequi explicabo perspiciatis, quasi natus laborum similique rem repellat.</p>
+    </main>
+</body>
+</html>
