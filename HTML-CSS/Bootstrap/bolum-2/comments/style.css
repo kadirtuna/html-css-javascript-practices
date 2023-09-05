@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bg-second-light {
+    background-color: #eee;
+}
+
+.btn-secondary{
+    background-color: #eee;
+    color: #000;
+    border: 1px solid rgb(206, 212, 218);
+}
+
+#comments .comments-content .comment-first-line-left{
+    font-size: .8rem;
+}
+
+#comments .comments-content .comment-first-line-left img {
+    width: 3.2rem;
+    margin-right: 1.5rem;
+    object-fit: cover;
+}
+
+#comments .comments-content .comment-first-line-right a{
+    color: #000;
+    background-color: #eee;
+}
+
+#evaluation .rating-result .indicator-wrapper {
+    width: calc(100% - 100px);
+}
